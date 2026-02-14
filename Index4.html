@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kamu, Selamanya - 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:italic,wght@300;600&family=Montserrat:wght@200;400;700&display=swap');
+
+        :root {
+            --velvet: #1a0b0b;
+            --rose-gold: #e5b3a3;
+            --gold: #d4af37;
+        }
+
+        body {
+            background-color: var(--velvet);
+            color: var(--rose-gold);
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .serif { font-family: 'Cormorant Garamond', serif; }
+
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: var(--velvet); }
+        ::-webkit-scrollbar-thumb { background: var(--rose-gold); border-radius: 10px; }
+
+        .float-subtle {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 4rem 2rem;
+        }
+
+        .glow {
+            position: absolute;
+            width: 40vw;
+            height: 40vw;
+            background: radial-gradient(circle, rgba(229, 179, 163, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .premium-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(229, 179, 163, 0.1);
+            border-radius: 2px; /* Square/Classic look */
+            padding: 3rem;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .premium-card:hover {
+            border-color: var(--rose-gold);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .line-dec {
+            width: 50px;
+            height: 1px;
+            background: var(--rose-gold);
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fixed inset-0 pointer-events-none opacity-20 z-50" style="background-image: url('https://www.transparenttextures.com/patterns/stardust.png');"></div>
+
+    <main class="relative">
+
+        <section class="section">
+            <div class="glow top-[-10%] left-[-10%]"></div>
+            <div class="text-center z-10" data-aos="fade-up" data-aos-duration="2000">
+                <p class="uppercase tracking-[0.5em] text-[10px] mb-6 opacity-60">Februari 14, 2026</p>
+                <h1 class="text-5xl md:text-8xl serif italic leading-tight mb-4">
+                    Sebuah Pesan <br> Untuk <span class="font-light">Laura</span>.
+                </h1>
+                <div class="line-dec"></div>
+                <p class="text-sm font-light tracking-widest opacity-40 animate-pulse mt-8">SCROL ALON ALON</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="max-w-4xl w-full grid md:grid-cols-2 gap-12 items-center">
+                <div class="premium-card float-subtle" data-aos="fade-right">
+                    <h2 class="serif italic text-4xl mb-6">Tentang Kita...</h2>
+                    <p class="leading-relaxed font-light opacity-80">
+                        Bukan tentang berapa lama kita sudah bersama, tapi tentang bagaimana setiap detiknya terasa seperti sebuah keajaiban yang nyata.
+                    </p>
+                </div>
+                <div class="text-right" data-aos="fade-left">
+                    <span class="text-8xl serif italic opacity-10 font-bold">2026</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="premium-card flex flex-col justify-center text-center" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="text-3xl mb-4">🌿</div>
+                    <h3 class="serif italic text-2xl mb-2">Kelembutanmu</h3>
+                    <p class="text-xs font-light opacity-60">Cara kamu menenangkan badai di kepalaku.</p>
+                </div>
+
+                <div class="md:col-span-2 premium-card flex flex-col justify-center" data-aos="zoom-in-up" data-aos-delay="300">
+                    <h3 class="serif italic text-3xl mb-4">"Kamu adalah rumah yang selalu ingin aku tuju."</h3>
+                    <div class="w-12 h-[1px] bg-rose-gold/30"></div>
+                </div>
+
+                <div class="md:col-span-2 premium-card p-12" data-aos="zoom-in-up" data-aos-delay="500">
+                    <p class="leading-relaxed font-light">
+                        Aku bersyukur atas tawa receh kita, kopi yang mendingin karena terlalu asyik mengobrol, dan cara kita saling memahami tanpa kata.
+                    </p>
+                </div>
+
+                <div class="premium-card flex flex-col justify-center text-center" data-aos="zoom-in-up" data-aos-delay="700">
+                    <div class="text-3xl mb-4">✨</div>
+                    <h3 class="serif italic text-2xl mb-2">Masa Depan</h3>
+                    <p class="text-xs font-light opacity-60">Masih banyak tahun yang ingin aku lalui bersamamu.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="glow bottom-[-10%] right-[-10%]"></div>
+            <div class="max-w-2xl w-full text-center relative z-10" data-aos="fade-up">
+                <div id="heart-box" class="cursor-pointer group relative py-20 transition-all duration-700">
+                    <div class="absolute inset-0 border border-rose-gold/10 group-hover:border-rose-gold/40 transition-all duration-700"></div>
+                    
+                    <div class="text-6xl mb-6 filter grayscale group-hover:grayscale-0 transition duration-700">🌹</div>
+                    <h2 class="serif italic text-4xl group-hover:tracking-widest transition-all duration-700 uppercase">Buka Hatiku</h2>
+                </div>
+
+                <div id="love-letter" class="hidden opacity-0 transform translate-y-10 transition-all duration-1000 mt-12 text-left premium-card">
+                    <h3 class="serif italic text-3xl mb-6 text-center">Happy Valentine, aura.</h3>
+                    <p class="font-light leading-relaxed mb-6">
+                        Di hari Valentine 2026 ini, aku cuma mau bilang terima kasih. Terima kasih sudah sabar, terima kasih sudah ada, dan terima kasih sudah menjadi kamu.
+                    </p>
+                    <p class="font-light leading-relaxed">
+                        Aku tidak tahu masa depan seperti apa yang menanti kita, tapi selama ada kamu di sampingku, aku tahu segalanya akan baik-baik saja.
+                    </p>
+                    <div class="mt-8 text-center italic serif text-xl opacity-60">
+                        Selamanya milikmu, <br>
+                        Arila 
+                    </div>
+                </div>
+
+                <p id="hint-text" class="mt-12 text-[10px] tracking-[0.5em] uppercase opacity-30">Klik bunga di atas</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 text-center opacity-20 text-[10px] tracking-widest">
+        I LOVE YOU LAURA INDAH PUTRI MAGHFIROH
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1500,
+            easing: 'ease-out-quart',
+            once: false
+        });
+
+        gsap.to(".glow", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            y: (i, target) => i === 0 ? 100 : -100,
+            rotation: 180,
+            duration: 2
+        });
+
+        const heartBox = document.getElementById('heart-box');
+        const letter = document.getElementById('love-letter');
+        const hint = document.getElementById('hint-text');
+
+        heartBox.addEventListener('click', () => {
+            gsap.to(heartBox, { 
+                scale: 0.9, 
+                opacity: 0, 
+                y: -50, 
+                duration: 1, 
+                onComplete: () => {
+                    heartBox.style.display = 'none';
+                    hint.style.display = 'none';
+                    letter.classList.remove('hidden');
+                    setTimeout(() => {
+                        letter.style.opacity = '1';
+                        letter.style.transform = 'translateY(0)';
+                    }, 100);
+                    
+                    for(let i=0; i<30; i++) createSparkle();
+                }
+            });
+        });
+
+        function createSparkle() {
+            const s = document.createElement('div');
+            s.innerHTML = '✦';
+            s.style.position = 'fixed';
+            s.style.left = Math.random() * 100 + 'vw';
+            s.style.top = Math.random() * 100 + 'vh';
+            s.style.color = '#e5b3a3';
+            s.style.fontSize = Math.random() * 15 + 10 + 'px';
+            s.style.pointerEvents = 'none';
+            s.style.zIndex = '100';
+            document.body.appendChild(s);
+
+            gsap.from(s, { scale: 0, opacity: 0, duration: 1 });
+            gsap.to(s, { 
+                y: -50, 
+                opacity: 0, 
+                duration: 3 + Math.random() * 2, 
+                onComplete: () => s.remove() 
+            });
+        }
+    </script>
+</body>
+</html>
